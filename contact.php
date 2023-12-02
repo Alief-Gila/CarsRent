@@ -5,11 +5,7 @@
         <div class="container">
             <div class="row">
                 <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item btn"><a href="index.php">Home</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Contact</li>
-                    </ol>
-                    <h3>Contact</h3>
+
                 </nav>
             </div>
         </div>

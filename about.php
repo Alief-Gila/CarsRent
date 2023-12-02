@@ -5,11 +5,6 @@ include 'header.php';
         <div class="container">
             <div class="row">
                 <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="index.php">Home</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">About</li>
-                    </ol>
-                    <h3>About</h3>
                 </nav>
             </div>
         </div>
@@ -22,7 +17,7 @@ include 'header.php';
             <div class="row align-items-center mt-3">
                 <div class="col-lg-6 col-md-12 d-none d-lg-flex justify-content-center" data-aos="zoom-in"
                     data-aos-duration="1000">
-                    <img src="img/carsrent.jpg" class="img-fluid" width="350px" alt="">
+                    <img src="img/carsrent.png" class="img-fluid" width="350px" alt="">
                 </div>
                 <div class="col-lg-6 col-md-12" data-aos="fade-up" data-aos-duration="1000">
                     <p>CarsRent adalah sebuah website yang menawarkan layanan untuk melihat kisaran harga pasaran dan jenis

@@ -33,7 +33,7 @@
 <body>
 
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+    <nav class="navbar navbar-expand-lg fixed-top" id="navbar" style="background-color: #527853;">
         <div class="container">
             <a class="navbar-brand text-white" href="#">CarsRent</a>
             <button class="navbar-toggler border-white" type="button" data-bs-toggle="collapse"
@@ -48,9 +48,6 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" data-filename="about.php" href="about.php">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " data-filename="services.php" href="services.php">Services</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link " data-filename="cars.php" href="cars.php">Cars</a>

@@ -5,11 +5,7 @@
         <div class="container">
             <div class="row">
                 <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item "><a href="index.php">Home</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Cars</li>
-                    </ol>
-                    <h3>Cars</h3>
+
                 </nav>
             </div>
         </div>
@@ -19,8 +15,6 @@
         <div class="container">
             <div class="section-title mb-4 mb-xl-0" data-aos="fade-left" data-aos-duration="1000">
                 <h2>Cars</h2>
-                <p>Temukan pilihan mobil  yang lengkap dan berkualitas tinggi di CarsRent. Kami menyediakan
-                    berbagai macam kendaraan yang siap memenuhi kebutuhan Anda.</p>
             </div>
             <?php
                     // connect ke database sementara
