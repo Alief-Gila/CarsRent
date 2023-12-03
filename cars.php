@@ -111,7 +111,7 @@ include 'footer.php';
                     <div class="col-12">
                         <label class="form-label">Model Mobil:</label>
                         <input type="text" class="form-control" name="mobil_modal" id="modalMobilInput" readonly>
-                        <input type="text" class="form-control" name="id_modal" id="modalidInput">
+                        <input type="hidden" class="form-control" name="id_modal" id="modalidInput">
                     </div>
                     <div class="col-12">
                         <label class="form-label">Review:</label>
