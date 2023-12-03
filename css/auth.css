@@ -1,13 +1,13 @@
 body.login {
     height: 100vh;
-    background-color: #37517e;
+    background-color: #32857a;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 body.register {
-    background-color: #37517e;
+    background-color: #32857a;
     display: flex;
     justify-content: center;
     align-items: center;

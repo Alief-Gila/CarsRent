@@ -4,16 +4,16 @@
 }
 
 :root {
-    --blue-color: #45b2ce;
-    --dark-blue-color: #283a5a;
+    --blue-color: #6297a0;
+    --dark-blue-color: #285a45;
     --gray-color: #5e5e5e;
-    --dark-light-blue-color: #37517e;
+    --dark-light-blue-color: #0b301b;
 }
 
 #navbar {
     background-color: var(--dark-blue-color);
     color: white;
-}
+} 
 
 .nav-link {
     color: white;
@@ -33,7 +33,7 @@
     padding: 0px 10px;
     border-radius: 30px;
     transition: 0.5s;
-}
+} 
 
 .nav-item.login:hover {
     background-color: var(--blue-color);
@@ -110,7 +110,7 @@
 
 #hero {
     padding: 150px 0px;
-    background-color: var(--dark-light-blue-color);
+    background-color: var(--gray-color);
     color: white;
 }
 
@@ -155,7 +155,7 @@
 }
 
 #cta {
-    background: linear-gradient(rgba(40, 58, 90, 0.9), rgba(40, 58, 90, 0.9)), url("../img/cta-bg.jpg") fixed center center;
+    background: linear-gradient(rgba(12, 68, 63, 0.9), rgba(9, 82, 70, 0.9)), url("../img/cta-bg.jpg") fixed center center;
     background-size: cover;
     padding: 120px 0;
     color: white;
@@ -189,7 +189,7 @@ section {
     font-weight: bold;
     text-transform: uppercase;
     position: relative;
-    color: #37517e;
+    color: #285a45;
 }
 
 .section-title p {
@@ -229,7 +229,7 @@ section {
 
 #breadcrumb {
     padding-top: 90px;
-    background-color: #f3f5faff;
+    background-color: rgba(243, 245, 250, 0.308);
 }
 
 #about {
@@ -256,6 +256,7 @@ section {
 
 #about .section-title h2 {
     margin-bottom: 0;
+    color: #285a45;
 }
 
 #services {
@@ -274,7 +275,7 @@ section {
 .service-item:hover {
     transform: translate(0px, -15px);
 }
-
+lor
 .service-item:hover h4 {
     color: var(--blue-color);
 }

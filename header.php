@@ -33,7 +33,7 @@
 <body>
 
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+    <nav class="navbar navbar-expand-lg fixed-top" id="navbar" style="background-color: #527853;">
         <div class="container">
             <a class="navbar-brand text-white" href="#">CarsRent</a>
             <button class="navbar-toggler border-white" type="button" data-bs-toggle="collapse"
@@ -48,9 +48,6 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" data-filename="about.php" href="about.php">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " data-filename="services.php" href="services.php">Services</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link " data-filename="cars.php" href="cars.php">Cars</a>
@@ -68,3 +65,25 @@
             </div>
         </div>
     </nav>
+    <?php
+                    // connect ke database sementara
+                    $servername = "localhost";
+                    $username = "root";
+                    $password = "";
+                    $dbname = "db_carsresent";
+
+                    // Create connection
+                    $conn = new mysqli($servername, $username, $password, $dbname);
+
+                    // Check connection
+                    if ($conn->connect_error) {
+                        die("Connection failed: " . $conn->connect_error);
+                    }
+            ?>
+            <script>
+    function prepareReviewForm(mobilModal,id_modal) {
+        // Set the value of the hidden input in the modal form
+        document.getElementById('modalMobilInput').value = mobilModal;
+        document.getElementById('modalidInput').value = id_modal;
+    }
+</script>
