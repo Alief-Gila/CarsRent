@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 02, 2023 at 02:00 PM
+-- Generation Time: Dec 04, 2023 at 11:40 AM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.0.28
 
@@ -63,6 +63,7 @@ CREATE TABLE `review` (
   `id_review` int(5) NOT NULL,
   `id_user` int(5) NOT NULL,
   `id` int(5) NOT NULL,
+  `rating` int(5) NOT NULL,
   `massage` varchar(256) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
@@ -70,21 +71,11 @@ CREATE TABLE `review` (
 -- Dumping data for table `review`
 --
 
-INSERT INTO `review` (`id_review`, `id_user`, `id`, `massage`) VALUES
-(1, 1, 1, 'Gile mobilnye, ajib bener ye.'),
-(2, 2, 8, 'asoy geboy ngebut dijalanan ibukota asoy geboy ngebut dijalanan ibukota asoy geboy ngebut dijalanan ibukota asoy geboy ngebut dijalanan ibukota asoy geboy ngebut dijalanan ibukota asoy geboy ngebut dijalanan ibukota asoy geboy ngebut dijalanan ibukota asoy'),
-(3, 1, 7, 'asdasdasd'),
-(4, 2, 5, 'mobilnya bagus'),
-(5, 1, 8, 'asdjkb asdhj asdui '),
-(6, 1, 4, '123'),
-(7, 2, 4, '12312313123'),
-(9, 1, 6, 'asdasdasdadadasd'),
-(10, 1, 5, 'asd asd asd '),
-(11, 2, 6, 'asd d sa a ad asd '),
-(12, 2, 6, 'asd d sa a ad asd '),
-(16, 1, 5, 'asdasdasd adasdasd'),
-(17, 1, 5, 'asdasdasd adasdasd'),
-(20, 1, 1, 'da  dgasjkdh');
+INSERT INTO `review` (`id_review`, `id_user`, `id`, `rating`, `massage`) VALUES
+(1, 1, 1, 5, 'Gile mobilnye, ajib bener ye.'),
+(2, 2, 8, 2, 'asoy geboy ngebut dijalanan ibukota asoy geboy ngebut dijalanan ibukota asoy geboy ngebut dijalanan ibukota asoy geboy ngebut dijalanan ibukota asoy geboy ngebut dijalanan ibukota asoy geboy ngebut dijalanan ibukota asoy geboy ngebut dijalanan ibukota asoy'),
+(106, 2, 4, 3, 'jadsh dskjhl '),
+(140, 2, 2, 4, '4 star deh, coba lagi 1 kali');
 
 -- --------------------------------------------------------
 
@@ -175,7 +166,7 @@ ALTER TABLE `mobil`
 -- AUTO_INCREMENT for table `review`
 --
 ALTER TABLE `review`
-  MODIFY `id_review` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+  MODIFY `id_review` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=206;
 
 --
 -- AUTO_INCREMENT for table `tipe`

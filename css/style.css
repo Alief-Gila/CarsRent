@@ -275,8 +275,13 @@ section {
 .service-item:hover {
     transform: translate(0px, -15px);
 }
+<<<<<<< HEAD
 lor
 .service-item:hover h4 {
+=======
+
+lor .service-item:hover h4 {
+>>>>>>> a7326631bc79ff171851a12f6ce9dc3586c6fcef
     color: var(--blue-color);
 }
 
@@ -417,4 +422,25 @@ lor
     .cars-img {
         height: unset;
     }
+}
+
+.stars {
+    display: flex;
+}
+
+.star {
+    display: none;
+}
+
+.star+label {
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    background-image: url("../img/star-disable.png");
+    background-size: cover;
+}
+
+.star:checked+label,
+.star:hover+label {
+    background-image: url("../img/star-enable.png");
 }

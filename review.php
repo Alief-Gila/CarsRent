@@ -38,7 +38,6 @@ mysqli_query($conn, $submit)
 
 ?>
 <div class="container mt-5 mb-5">
-    <a class="btn-hero" href="reviewform.php">Buat Review</a>
     <div class="section-title mb-4 mb-xl-0 mt-5" data-aos="fade-left" data-aos-duration="1000">
         <div class="row row-gap-3">
             <tbody>
@@ -49,8 +48,9 @@ mysqli_query($conn, $submit)
                 $password = "";
                 $dbname = "db_carsresent";
 
-                // Create connection
-                $conn = new mysqli($servername, $username, $password, $dbname);
+$id_user = $_REQUEST['nama'] ?? null;
+$id_mobil = $_REQUEST['id_modal'] ?? null;
+$review = $_REQUEST['review'] ?? null;
 
                 // Check connection
                 if ($conn->connect_error) {
@@ -70,7 +70,8 @@ mysqli_query($conn, $submit)
                 $sql = "SELECT user.username as 'username', mobil.nama as 'nama', mobil.gambar as 'gambar', massage 
                     FROM review
                     INNER join user on user.id_user = review.id_user
-                    INNER Join mobil on mobil.id = review.id";
+                    INNER Join mobil on mobil.id = review.id
+                    INNER Join tipe on tipe.id_tipe = mobil.id_tipe";
 
                 $review = $conn->query($sql);
                 foreach ($review as $r) { ?>
@@ -119,3 +120,39 @@ mysqli_query($conn, $submit)
 <?php
 include 'footer.php';
 ?>
+<!-- Bekasan
+    <div
+                                class="col-xl-3 col-lg-4 col-md-6 col-12 cars-item filter-<?= $r['tipe']; ?> d-flex align-items-stretch mt-4">
+                                <div class="cars-wrap justify-content-lg-stretch">
+                                    <div class="cars-info justify-content-lg-stretch">
+                                        <tr>
+                                            <th scope="row">
+                                                
+                                            </th>
+                                            <td>
+                                                <h4>
+                                                <?= $r['username']; ?>
+                                                </h4>
+                                            </td>
+                                            <br>
+                                            <td>
+                                                <div class="cars-img">
+                                                    <img src="img/cars/<?= $r['gambar']; ?>" alt="" class="img-fluid">
+                                                </div>
+                                                Mobil :
+                                                <h6>
+                                                    <?= $r['nama']; ?>
+                                                </h6>
+                                            </td>
+                                            <br>
+                                            <td>
+                                                Review :
+                                                <h6>
+                                                    <?= $r['massage']; ?>
+                                                </h6>
+                                            </td>
+                                            <br>
+                                    </div>
+                                </div>
+                            </div>
+                        -->

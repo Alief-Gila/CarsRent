@@ -5,6 +5,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>CarsRent</title>
+    <!-- tittle img -->
+    <link rel="icon" href="img/carsrent.png">
+
     <!-- BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
@@ -35,7 +38,7 @@
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg fixed-top" id="navbar" style="background-color: #527853;">
         <div class="container">
-            <a class="navbar-brand text-white" href="#">CarsRent</a>
+            <a class="navbar-brand text-white" href="index.php">CarsRent</a> 
             <button class="navbar-toggler border-white" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -65,3 +68,25 @@
             </div>
         </div>
     </nav>
+    <?php
+                    // connect ke database sementara
+                    $servername = "localhost";
+                    $username = "root";
+                    $password = "";
+                    $dbname = "db_carsresent";
+
+                    // Create connection
+                    $conn = new mysqli($servername, $username, $password, $dbname);
+
+                    // Check connection
+                    if ($conn->connect_error) {
+                        die("Connection failed: " . $conn->connect_error);
+                    }
+            ?>
+            <script>
+    function prepareReviewForm(mobilModal,id_modal) {
+        // Set the value of the hidden input in the modal form
+        document.getElementById('modalMobilInput').value = mobilModal;
+        document.getElementById('modalidInput').value = id_modal;
+    }
+</script>

@@ -36,30 +36,30 @@ include 'header.php';
                     die("Connection failed: " . $conn->connect_error);
                 }
                 //echo "Connected successfully";
-    
+
                 ?>
                 <form action='review.php' method="post">
-                <input type="text" name="nama" id="nama" > sementara isi pake id_user 
-                <?php
-                $a = 1;
-                $sql = "SELECT mobil.nama as nama, tipe.nama as 'tipe', tipe.id_tipe as 'id_tipe', id FROM mobil
+                    <input type="text" name="nama" id="nama"> sementara isi pake id_user
+                    <?php
+                    $a = 1;
+                    $sql = "SELECT mobil.nama as nama, tipe.nama as 'tipe', tipe.id_tipe as 'id_tipe', id FROM mobil
                 INNER join tipe on tipe.id_tipe = mobil.id_tipe ORDER BY tipe.nama, mobil.nama";
-                $mobil = $conn->query($sql);
-                ?>
-                <div class="col-12">
-                    <label class="form-label">Model Mobil :</label>
-                    <select name="mobil" id="mobil" class="form-control form-control-user">
-                        <option value="">Pilih Model</option>
-                        <?php foreach ($mobil as $m) { ?>
-                            <option value="<?= $m['id']; ?>">
-                                <?= $m['tipe']; ?> ->
-                                <?= $m['nama']; ?>
-                            </option>
-                        <?php } ?>
-                    </select>
-                </div>
+                    $mobil = $conn->query($sql);
+                    ?>
+                    <div class="col-12">
+                        <label class="form-label">Model Mobil :</label>
+                        <select name="mobil" id="mobil" class="form-control form-control-user">
+                            <option value="">Pilih Model</option>
+                            <?php foreach ($mobil as $m) { ?>
+                                <option value="<?= $m['id']; ?>">
+                                    <?= $m['tipe']; ?> ->
+                                    <?= $m['nama']; ?>
+                                </option>
+                            <?php } ?>
+                        </select>
+                    </div>
 
-                <!-- 
+                    <!-- 
                     <div class="col-12">
                     <label class="form-label">Jenis Mobil :</label><br>
                     <select name="color" id="color">
@@ -74,13 +74,13 @@ include 'header.php';
                             -->
 
 
-                <div class="col-12">
-                    <label class="form-label">Review :</label>
-                    <textarea rows="5" class="form-control" name='review' id="review"></textarea>
-                </div>
-                <div class="col-12 d-flex justify-content-center">
-                    <button type="submit" value="submit" class="form-control" id="form-submit" >Kirim Review</button>
-                </div>
+                    <div class="col-12">
+                        <label class="form-label">Review :</label>
+                        <textarea rows="5" class="form-control" name='review' id="review"></textarea>
+                    </div>
+                    <div class="col-12 d-flex justify-content-center">
+                        <button type="submit" value="submit" class="form-control" id="form-submit">Kirim Review</button>
+                    </div>
             </div>
         </div>
     </div>
