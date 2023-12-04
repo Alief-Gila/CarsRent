@@ -7,7 +7,7 @@
                 <div class="col-lg-6 col-12 d-flex flex-column justify-content-center text-center text-lg-start btn-pr"
                     data-aos="fade-up" data-aos-duration="1000">
                     <h1 class="fw-bold">CarsRent</h1>
-                    <h2>Temukan kebebasan menjelajahi perjalanan dengan kualitas terbaik melalui layanan istimewa kami
+                    <h2>Temukan pilihan mobil  yang lengkap dan berkualitas tinggi.
                     </h2>
                     <div class="d-flex justify-content-lg-start justify-content-center mt-3">
                         <a class="btn-hero" href="about.php">Selengkapnya</a>
@@ -48,9 +48,8 @@
     <section id="testimonial">
         <div class="container" data-aos="fade-up" data-aos-duration="1000">
             <div class="section-title">
-                <h2>Testimonial</h2>
-                <p>Testimoni tentang CarsRent kami adalah bukti nyata kepuasan pelanggan kami. Pelanggan kami telah
-                    mengalami pengalaman yang luar biasa dengan layanan kami</p>
+                <h2>Review user</h2>
+                <p>segelintir ulasan review dari user</p>
             </div>
             <div class="row text-center d-flex align-items-stretch">
                 <div class="col-md-6 col-lg-4 col-12 mb-4 d-flex align-items-stretch" data-aos="zoom-in"
@@ -64,8 +63,7 @@
                             <h4 class="mb-4">wati sunengsih</h4>
                             <hr />
                             <p class="dark-grey-text mt-4">
-                                <i class="fas fa-quote-left pe-2"></i>LSaya sangat puas dengan layanan  dari
-                                perusahaan ini. Armada mobil yang mereka sediakan sangat berkualitas. Sangat direkomendasikan!
+                                <i class="fas fa-quote-left pe-2"></i>nanti ini isinya review dari user Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat similique nulla tenetur doloribus animi ipsum!
                             </p>
                         </div>
                     </div>
@@ -114,7 +112,7 @@
                     <h3>BUTUH KENDARAAN ? LIHAT KISARAN HARGANYA SEKARANG!!</h3>
                     <p> Apakah Anda membutuhkan kendaraan untuk keperluan pribadi, liburan keluarga, atau perjalanan
                         bisnis?
-                        Jangan khawatir! Kami di CarsRent siap memberikan solusi untuk kisaran harga Mobil yang tepat untuk Anda.
+                        Jangan khawatir!CarsRent siap memberikan solusi untuk kisaran harga Mobil yang tepat untuk Anda.
                         Dapatkan
                         kendaraan yang Anda butuhkan dengan cepat dan mudah melalui layanan CarsRent terbaik kami
                     </p>

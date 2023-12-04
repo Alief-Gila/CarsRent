@@ -13,7 +13,7 @@
 #navbar {
     background-color: var(--dark-blue-color);
     color: white;
-}
+} 
 
 .nav-link {
     color: white;
@@ -33,7 +33,7 @@
     padding: 0px 10px;
     border-radius: 30px;
     transition: 0.5s;
-}
+} 
 
 .nav-item.login:hover {
     background-color: var(--blue-color);
@@ -275,8 +275,13 @@ section {
 .service-item:hover {
     transform: translate(0px, -15px);
 }
+<<<<<<< HEAD
+lor
+.service-item:hover h4 {
+=======
 
 lor .service-item:hover h4 {
+>>>>>>> a7326631bc79ff171851a12f6ce9dc3586c6fcef
     color: var(--blue-color);
 }
 

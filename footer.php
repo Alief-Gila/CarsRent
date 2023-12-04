@@ -5,9 +5,6 @@
                     <div class="col-lg-3 col-md-6 footer-contact">
                         <h3 class="heading-sub">CarsRent</h3>
                         <p>
-                            Jl.Pagelaran <br>
-                            Bogor, Ciomas 16610<br>
-                            Indonesia <br><br>
                             <strong>Phone:</strong> +62 5984 6716 635<br>
                             <strong>Email:</strong> helpdesk@CarsRent.com<br>
                         </p>
@@ -17,7 +14,6 @@
                         <ul>
                             <li><i class="bx bx-chevron-right"></i> <a href="index.php">Home</a></li>
                             <li><i class="bx bx-chevron-right"></i> <a href="about.php">About</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="services.php">Services</a></li>
                             <li><i class="bx bx-chevron-right"></i> <a href="cars.php">Cars</a></li>
                             <li><i class="bx bx-chevron-right"></i> <a href="review.php">Review</a></li>
                             <li><i class="bx bx-chevron-right"></i> <a href="contact.php">Contact</a></li>
@@ -36,7 +32,16 @@
                 </div>
             </div>
         </div>
-        <div class="footer-bottom d-flex justify-content-center py-3">
+            <section id="breadcrumb">
+        <div class="container">
+            <div class="row">
+                <nav aria-label="breadcrumb">
+
+                </nav>
+            </div>
+        </div>
+    </section>
+        <div class="footer-bottom d-flex justify-content-center py-3" style="background-color: #527853;">
             &copy; Copyright <strong><span> CarsRent</span></strong>. All Rights Reserved
         </div>
     </footer>
