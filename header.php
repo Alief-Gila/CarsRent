@@ -68,3 +68,25 @@
             </div>
         </div>
     </nav>
+    <?php
+                    // connect ke database sementara
+                    $servername = "localhost";
+                    $username = "root";
+                    $password = "";
+                    $dbname = "db_carsresent";
+
+                    // Create connection
+                    $conn = new mysqli($servername, $username, $password, $dbname);
+
+                    // Check connection
+                    if ($conn->connect_error) {
+                        die("Connection failed: " . $conn->connect_error);
+                    }
+            ?>
+            <script>
+    function prepareReviewForm(mobilModal,id_modal) {
+        // Set the value of the hidden input in the modal form
+        document.getElementById('modalMobilInput').value = mobilModal;
+        document.getElementById('modalidInput').value = id_modal;
+    }
+</script>
