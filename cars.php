@@ -92,7 +92,7 @@ include 'header.php';
 <?php
 include 'footer.php';
 ?>
-<!-- Modal -->
+
 <div class="modal fade" id="exampleModal" tabindex="1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -101,9 +101,8 @@ include 'footer.php';
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <!-- Form inside the modal -->
 
-                <form action='review.php' method="post">
+                <form action='reviewcontroller.php' method="post">
                     <label class="form-label">Username: sementara isi pake id_user</label><br>
                     <div class="col-12">
                         <input type="text" class="form-control" name="nama" id="nama">
@@ -111,7 +110,7 @@ include 'footer.php';
                     <div class="col-12">
                         <label class="form-label">Model Mobil:</label>
                         <input type="text" class="form-control" name="mobil_modal" id="modalMobilInput" readonly>
-                        <input type="hidden" class="form-control" name="id_modal" id="modalidInput">
+                        <input type="text" class="form-control" name="id_modal" id="modalidInput">
                     </div>
                     <div class="col-12">
                         <label class="form-label">Review:</label>
