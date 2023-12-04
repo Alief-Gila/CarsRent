@@ -70,8 +70,8 @@ include 'header.php';
                                 <?= number_format($r['harga'], '0', '.'); ?>
                             </p>
                             <br>
-                            <?php $mobilModal = $r['nama']; 
-                                  $id_modal = $r['id'];
+                            <?php $mobilModal = $r['nama'];
+                            $id_modal = $r['id'];
                             ?>
 
                             <button type="button" class="btn-hero" data-bs-toggle="modal" data-bs-target="#exampleModal"
@@ -111,6 +111,21 @@ include 'footer.php';
                         <label class="form-label">Model Mobil:</label>
                         <input type="text" class="form-control" name="mobil_modal" id="modalMobilInput" readonly>
                         <input type="hidden" class="form-control" name="id_modal" id="modalidInput">
+                    </div>
+                    <p>Rating:</p>
+                    <div class="stars" id="stars">
+                        
+                        <input type="radio" name="rating" class="star" id="star1" value="1">
+                        <label for="star1"></label>
+                        <input type="radio" name="rating" class="star" id="star2" value="2">
+                        <label for="star2"></label>
+                        <input type="radio" name="rating" class="star" id="star3" value="3">
+                        <label for="star3"></label>
+                        <input type="radio" name="rating" class="star" id="star4" value="4">
+                        <label for="star4"></label>
+                        <input type="radio" name="rating" class="star" id="star5" value="5">
+                        <label for="star5"></label>
+                        <script src="main.js"></script>
                     </div>
                     <div class="col-12">
                         <label class="form-label">Review:</label>
