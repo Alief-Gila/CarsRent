@@ -38,7 +38,6 @@ mysqli_query($conn, $submit)
 
 ?>
 <div class="container mt-5 mb-5">
-    <a class="btn-hero" href="reviewform.php">Buat Review</a>
     <div class="section-title mb-4 mb-xl-0 mt-5" data-aos="fade-left" data-aos-duration="1000">
         <div class="row row-gap-3">
             <tbody>
