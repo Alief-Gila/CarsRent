@@ -104,36 +104,34 @@ include 'footer.php';
 
                 <form action='reviewcontroller.php' method="post">
                     <label class="form-label">Username: sementara isi pake id_user</label><br>
-                    <div class="col-12">
-                        <input type="text" class="form-control" name="nama" id="nama">
+
+                    <input type="text" class="form-control" name="nama" id="nama">
+
+
+                    <label class="form-label">Model Mobil:</label>
+                    <input type="text" class="form-control" name="mobil_modal" id="modalMobilInput" readonly>
+                    <input type="hidden" class="form-control" name="id_modal" id="modalidInput">
+
+                    <label class="form-label">Rating:</label><br>
+                    <div class="rate">
+                        <input type="radio" id="star5" name="rating" value="5" />
+                        <label for="star5" title="text">5 stars</label>
+                        <input type="radio" id="star4" name="rating" value="4" />
+                        <label for="star4" title="text">4 stars</label>
+                        <input type="radio" id="star3" name="rating" value="3" />
+                        <label for="star3" title="text">3 stars</label>
+                        <input type="radio" id="star2" name="rating" value="2" />
+                        <label for="star2" title="text">2 stars</label>
+                        <input type="radio" id="star1" name="rating" value="1" />
+                        <label for="star1" title="text">1 star</label>
                     </div>
-                    <div class="col-12">
-                        <label class="form-label">Model Mobil:</label>
-                        <input type="text" class="form-control" name="mobil_modal" id="modalMobilInput" readonly>
-                        <input type="hidden" class="form-control" name="id_modal" id="modalidInput">
-                    </div>
-                    <p>Rating:</p>
-                    <div class="stars" id="stars">
-                        
-                        <input type="radio" name="rating" class="star" id="star1" value="1">
-                        <label for="star1"></label>
-                        <input type="radio" name="rating" class="star" id="star2" value="2">
-                        <label for="star2"></label>
-                        <input type="radio" name="rating" class="star" id="star3" value="3">
-                        <label for="star3"></label>
-                        <input type="radio" name="rating" class="star" id="star4" value="4">
-                        <label for="star4"></label>
-                        <input type="radio" name="rating" class="star" id="star5" value="5">
-                        <label for="star5"></label>
-                        <script src="main.js"></script>
-                    </div>
-                    <div class="col-12">
-                        <label class="form-label">Review:</label>
-                        <textarea rows="5" class="form-control" name='review' id="review"></textarea>
-                    </div>
-                    <div class="col-12 d-flex justify-content-center">
-                        <button type="submit" value="submit" class="form-control" id="form-submit">Kirim Review</button>
-                    </div>
+<br><br>
+                    <label class="form-label">Review:</label>
+                    <textarea rows="3" class="form-control" name='review' id="review" maxlength="64"></textarea>
+
+
+                    <button type="submit" value="submit" class="form-control" id="form-submit">Kirim Review</button>
+
                 </form>
             </div>
         </div>
