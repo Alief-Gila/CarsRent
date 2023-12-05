@@ -127,7 +127,7 @@ include 'footer.php';
                     </div>
 <br><br>
                     <label class="form-label">Review:</label>
-                    <textarea rows="3" class="form-control" name='review' id="review" maxlength="64"></textarea>
+                    <textarea rows="3" class="form-control" name='review' id="review" maxlength="128"></textarea>
 
 
                     <button type="submit" value="submit" class="form-control" id="form-submit">Kirim Review</button>
